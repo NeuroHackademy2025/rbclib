@@ -103,7 +103,7 @@ class RBCClient(cloudpathlib.client.Client):
         if github_path is None:
             img = os.environ.get('JUPYTER_IMAGE')
             if isinstance(img, str) and 'quay.io/arokem/nh2025' in img:
-                github_path = '/home/jovyan/shared/RBC'
+                github_path = '/home/jovyan/shared/data/RBC'
             else:
                 # If there's no github path, we're done here.
                 self._github_path = None
